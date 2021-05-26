@@ -1,0 +1,135 @@
+body{
+
+  background-color: rgb(176, 223, 247);
+
+  /* text-transform: capitalize; */
+  text-align: justify;
+  font-size: 1.75em;
+  font-family: 'Satisfy',cursive;
+
+  /*font-family:"georgia", sans-serif; */
+
+}
+#title{
+  color: rgb(20, 175, 69);
+  background:linear-gradient(to right,orange,red);
+    /* font-weight: 200; */
+    font-family: 'Lobster', cursive;
+}
+.subtitle{
+  color: rgb(184, 57, 78);
+  font-family: 'Lobster', cursive;
+}
+#service{
+  height: 400px;
+  width: 70vw;
+  /* background-image: url(../images/image2.jpg); */
+
+
+  background: radial-gradient(circle, orange 20% , green 40%, blue 10% );
+  background-size: cover;
+}
+.instagram{
+  text-decoration: none;
+}
+.instagram:visited{
+  color:rgb(77, 250, 230);
+}
+.italics{
+  font-style:italic;
+}
+#my-img{
+  height: 400px;
+  width :60vw;
+  border: 10px solid rgb(3, 86, 138);
+  margin:40px;
+  padding:20px;
+  float:right;
+}
+#site-table{
+  display: block;
+}
+.container{
+  height:300px;
+  background-color: rgb(250,250,250);
+  margin: 10px;
+  display:flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+  align-items: center;
+}
+.item{
+  background-color: rgb(0,250,0);
+  color:white;
+  font-size: 20px;
+  font-family:sans-serif;
+  margin:30px;
+  text-align: center;
+  width: 70px;
+}
+.grid-container{
+  background-color: white;
+  margin:20px;
+  height:600px;
+  display: grid;
+   grid-template-rows:auto auto auto;
+   grid-template-columns: auto auto auto;
+   justify-content: space-evenly;
+   align-content: space-between;
+  grid-gap:10px 100px;
+}
+.grid-item{
+  color:black;
+  font-family: sans-serif;
+  font-size:40px;
+  text-align:center;
+  width:70px;
+  line-height: 40px;
+  margin:10px;
+}
+h2:hover{
+  color: rgb(0,0,0);
+}
+.submit{
+  margin:20px 30px;
+  background: rgb(242, 103, 39);
+  font-family: 'Permanent Marker', cursive;
+  text-decoration: none;
+  padding:10px 10px;
+  float: right;
+  border:2px solid black;
+  color:black;
+  text-align: center;
+  transform:matrix(1,0.45,0.80,1,20,30);
+  transition: background,padding 800ms ease-in-out ;
+  /* transform: scale(2); */
+  /* transform: rotate(45deg); */
+  }
+.submit:hover{
+  color:white;
+  background: rgb(100,180,50);
+  padding: 20px 20px;
+  /* transform: translate(20px ,10px); */
+  /* transform: skewY(50deg); */
+
+}
+#about-me{
+  animation:blue-to-orange 5s ease 0s infinite alternate;
+}
+@keyframes blue-to-orange {
+   0% {
+     background:blue;
+     transform: translate(0px,0px);
+   }
+   50% {
+     background:red;
+     transform:translate(10px,10px);
+   }
+   100% {
+     background: orange;
+     transform:translate(30px,30px);
+   }
+ }
+
+}
